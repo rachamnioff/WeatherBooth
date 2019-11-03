@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">WeatherBooth</string>
+    <string name="open_location_service">Need to open location service</string>
+    <string name="temperature_range">%d/%d</string>
+    <string name="error_location_permission_denied">Info Can Not Be Fetched As Permission Denied</string>
 </resources>

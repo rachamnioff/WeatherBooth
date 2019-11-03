@@ -3,22 +3,47 @@ package com.rakel.he.weatherbooth.presenter;
 import com.rakel.he.weatherbooth.contacts.DetailContact;
 import com.rakel.he.weatherbooth.contacts.MainContacts;
 import com.rakel.he.weatherbooth.model.ApiService;
+import com.rakel.he.weatherbooth.model.entity.TimeMachineEntity;
 
 import javax.inject.Inject;
 
+import rx.Subscriber;
+import rx.schedulers.Schedulers;
+
+
 public class DetailPresenter extends  BasePresenter implements DetailContact.Presenter {
-    private MainContacts.View mView;
+    private DetailContact.View mView;
     private ApiService mModel;
 
     @Inject
-    public void MainPresenter(MainContacts.View view,ApiService apiService)
+    public void MainPresenter(DetailContact.View view, ApiService apiService)
     {
         this.mModel=apiService;
         this.mView=view;
     }
 
-    @Override
-    public void loadTimeMachineData(long lat, long lon, long timestampForDay) {
 
+    public void loadTimeMachineData(double lat, double lon, long timestampForDay) {
+        mView.showProgress("loading");
+        mModel.getTimeMachine(KEY,lat,lon,timestampForDay)
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(Schedulers.io())
+                .subscribe(new Subscriber<TimeMachineEntity>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(TimeMachineEntity timeMachineEntity) {
+                        mView.dismissProgress();
+                        mView.onTimeMachineLoaded(timeMachineEntity);
+                    }
+                });
     }
 }

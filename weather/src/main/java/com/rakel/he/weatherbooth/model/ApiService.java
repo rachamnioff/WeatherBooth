@@ -11,13 +11,15 @@ public interface ApiService {
     //  /forecast
     @GET("/forecast/{key}/{lat},{long}?exclude=currently,minutely,alerts,flags,hourly")
     Observable<ForecastEntity> getForecast(@Path("key")String key,
-                                           @Path("lat")float lat,
-                                           @Path("long")float lon);
+
+                                           @Path("lat")double lat,
+                                           @Path("long")double lon);
 
 
     @GET("/forecast/{key}/{lat},{long},{time}?exclude=currently,minutely,alerts,flags,daily")
     Observable<TimeMachineEntity> getTimeMachine(@Path("key")String key,
-                                                 @Path("lat")float lat,
-                                                 @Path("long")float lon,
+
+                                                 @Path("lat")double lat,
+                                                 @Path("long")double lon,
                                                  @Path("time")long timeForDay);
 }

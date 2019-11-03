@@ -1,16 +1,18 @@
 package com.rakel.he.weatherbooth.contacts;
 
-import com.rakel.he.weatherbooth.model.entity.ForecastEntity;
+
+import com.rakel.he.weatherbooth.model.entity.DailyEntitity;
+import com.rakel.he.weatherbooth.view.IView;
 
 public interface MainContacts {
-    interface View
+    interface View extends IView
     {
-        void onForecastDataLoaded(ForecastEntity entity);
+        void onForecastDataLoaded(DailyEntitity entity);
     }
 
     interface Presenter
     {
-        void loadForecastData(long lat,long lon);
+        void loadForecastData(double lat,double lon);
         void gotoDetailPage(long timeForDay);
     }
 }
