@@ -3,4 +3,6 @@
     <string name="open_location_service">Need to open location service</string>
     <string name="temperature_range">%d/%d</string>
     <string name="error_location_permission_denied">Info Can Not Be Fetched As Permission Denied</string>
+    <string name="tittle_bar_left_menu">Return</string>
+    <string name="tittle_bar_right_menu">Next</string>
 </resources>

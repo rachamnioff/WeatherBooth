@@ -51,4 +51,5 @@ dependencies {
 
     //java注解
     implementation 'org.glassfish:javax.annotation:10.0-b28'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }

@@ -77,26 +77,7 @@ public class MainActivity extends BasicActivity implements MainContacts.View {
         mDateView.setText(sdf.format(new Date()));
     }
 
-    private Location getCurrentLocation()
-    {
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
-        Criteria criteria = new Criteria();
-        criteria.setAccuracy(Criteria.ACCURACY_FINE); // 高精度
-        criteria.setAltitudeRequired(false);
-        criteria.setBearingRequired(false);
-        criteria.setCostAllowed(true);
-        criteria.setPowerRequirement(Criteria.POWER_LOW); // 低功耗
-        String provider = locationManager.getBestProvider(criteria, true);
-
-        //获取Location
-        try {
-            return locationManager.getLastKnownLocation(provider);
-        }catch (SecurityException e)
-        {
-            return null;
-        }
-    }
 
     private void loadForecast()
     {

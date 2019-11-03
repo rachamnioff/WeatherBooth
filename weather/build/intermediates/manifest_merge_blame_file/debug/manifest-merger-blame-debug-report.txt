@@ -10,33 +10,57 @@
 9        android:targetSdkVersion="29" />
 9-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml
 10
-11    <application
-11-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:5:5-11:55
-12        android:allowBackup="true"
-12-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:10:9-35
-19        android:theme="@style/AppTheme" >
-19-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:11:9-40
-20        <activity
-20-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:12:9-16:66
-21            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-21-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:13:13-86
-22            android:exported="false"
-22-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:14:13-37
-23            android:label=""
-23-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:15:13-29
-24            android:theme="@style/EasyPermissions.Transparent" />
-24-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:16:13-63
-25    </application>
-26
-27</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:20:5-67
+11-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:20:22-64
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:21:5-81
+12-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:21:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:22:5-78
+13-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:22:22-76
+14
+15    <application
+15-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:5:5-18:19
+16        android:allowBackup="true"
+16-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:6:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:7:9-43
+20        android:label="@string/app_name"
+20-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:8:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:9:9-54
+22        android:supportsRtl="true"
+22-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:10:9-35
+23        android:theme="@style/AppTheme" >
+23-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:11:9-40
+24        <activity android:name="com.rakel.he.weatherbooth.view.MainActivity" >
+24-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:12:9-17:20
+24-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:12:19-52
+25            <intent-filter>
+25-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:13:13-16:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:14:17-68
+26-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:14:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:15:17-77
+28-->/Users/rakelhe/source_code/WeatherBooth/weather/src/main/AndroidManifest.xml:15:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:12:9-16:66
+32            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+32-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:13:13-86
+33            android:exported="false"
+33-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:14:13-37
+34            android:label=""
+34-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:15:13-29
+35            android:theme="@style/EasyPermissions.Transparent" />
+35-->[pub.devrel:easypermissions:0.3.0] /Users/rakelhe/.gradle/caches/transforms-2/files-2.1/1a188924313590d89a56800b3de83f34/jetified-easypermissions-0.3.0/AndroidManifest.xml:16:13-63
+36    </application>
+37
+38</manifest>

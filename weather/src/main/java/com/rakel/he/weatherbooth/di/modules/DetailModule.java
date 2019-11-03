@@ -7,7 +7,6 @@ import dagger.Provides;
 
 @Module
 public class DetailModule {
-
     private final DetailContact.View mView;
 
     public DetailModule(DetailContact.View mView) {
