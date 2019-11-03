@@ -8,4 +8,6 @@ public class DetailActivity extends BasicActivity implements DetailContact.View 
     public void onTimeMachineLoaded(TimeMachineEntity entity) {
 
     }
+
+
 }
