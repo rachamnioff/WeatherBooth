@@ -2000,6 +2000,10 @@
         "source": "/Users/rakelhe/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "/Users/rakelhe/source_code/WeatherBooth/weather/build/intermediates/res/merged/debug/layout_activity_detail.xml.flat",
+        "source": "/Users/rakelhe/source_code/WeatherBooth/weather/src/main/res/layout/activity_detail.xml"
+    },
+    {
         "merged": "/Users/rakelhe/source_code/WeatherBooth/weather/build/intermediates/res/merged/debug/raw_joda_europe_tiraspol.flat",
         "source": "/Users/rakelhe/.gradle/caches/transforms-2/files-2.1/7772908800d4465b2ebe34ec0f2dd276/jetified-android.joda-2.9.3/res/raw/joda_europe_tiraspol"
     },
@@ -2560,6 +2564,10 @@
         "source": "/Users/rakelhe/.gradle/caches/transforms-2/files-2.1/7772908800d4465b2ebe34ec0f2dd276/jetified-android.joda-2.9.3/res/raw/joda_europe_paris"
     },
     {
+        "merged": "/Users/rakelhe/source_code/WeatherBooth/weather/build/intermediates/res/merged/debug/layout_layout_tittle_bar.xml.flat",
+        "source": "/Users/rakelhe/source_code/WeatherBooth/weather/src/main/res/layout/layout_tittle_bar.xml"
+    },
+    {
         "merged": "/Users/rakelhe/source_code/WeatherBooth/weather/build/intermediates/res/merged/debug/raw_joda_etc_gmt_13.flat",
         "source": "/Users/rakelhe/.gradle/caches/transforms-2/files-2.1/7772908800d4465b2ebe34ec0f2dd276/jetified-android.joda-2.9.3/res/raw/joda_etc_gmt_13"
     },
@@ -3106,6 +3114,10 @@
     {
         "merged": "/Users/rakelhe/source_code/WeatherBooth/weather/build/intermediates/res/merged/debug/raw_joda_america_st_barthelemy.flat",
         "source": "/Users/rakelhe/.gradle/caches/transforms-2/files-2.1/7772908800d4465b2ebe34ec0f2dd276/jetified-android.joda-2.9.3/res/raw/joda_america_st_barthelemy"
+    },
+    {
+        "merged": "/Users/rakelhe/source_code/WeatherBooth/weather/build/intermediates/res/merged/debug/layout_item_hourly_detail.xml.flat",
+        "source": "/Users/rakelhe/source_code/WeatherBooth/weather/src/main/res/layout/item_hourly_detail.xml"
     },
     {
         "merged": "/Users/rakelhe/source_code/WeatherBooth/weather/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",

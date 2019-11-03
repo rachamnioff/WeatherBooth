@@ -1,7 +1,6 @@
 package com.rakel.he.weatherbooth.presenter;
 
 import com.rakel.he.weatherbooth.contacts.DetailContact;
-import com.rakel.he.weatherbooth.contacts.MainContacts;
 import com.rakel.he.weatherbooth.model.ApiService;
 import com.rakel.he.weatherbooth.model.entity.TimeMachineEntity;
 
@@ -16,7 +15,7 @@ public class DetailPresenter extends  BasePresenter implements DetailContact.Pre
     private ApiService mModel;
 
     @Inject
-    public void MainPresenter(DetailContact.View view, ApiService apiService)
+    public void DetailPresenter(DetailContact.View view, ApiService apiService)
     {
         this.mModel=apiService;
         this.mView=view;

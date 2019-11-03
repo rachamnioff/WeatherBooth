@@ -27,13 +27,15 @@ import java.util.Date;
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 import android.widget.TextView;
 
+import javax.inject.Inject;
+
 public class MainActivity extends BasicActivity implements MainContacts.View {
 
     private TextView mDateView,mTemperatureRangeView,mIconView;
     private final int LOCATION_PERMISSION_REQUEST_CODE=1;
     private long timeForDay=-1;
 
-
+    @Inject
     MainPresenter mPresenter;
 
 

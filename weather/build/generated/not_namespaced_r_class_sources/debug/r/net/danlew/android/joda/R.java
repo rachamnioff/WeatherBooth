@@ -519,9 +519,9 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int joda_time_android_date_time = 0x7f0e001c;
-        public static final int joda_time_android_preposition_for_date = 0x7f0e001d;
-        public static final int joda_time_android_preposition_for_time = 0x7f0e001e;
-        public static final int joda_time_android_relative_time = 0x7f0e001f;
+        public static final int joda_time_android_date_time = 0x7f0e001d;
+        public static final int joda_time_android_preposition_for_date = 0x7f0e001e;
+        public static final int joda_time_android_preposition_for_time = 0x7f0e001f;
+        public static final int joda_time_android_relative_time = 0x7f0e0020;
     }
 }

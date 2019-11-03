@@ -13,7 +13,7 @@ public class DetailModule {
         this.mView = mView;
     }
     @Provides
-    public DetailContact.View provideMainView(){
+    public DetailContact.View provideDetailView(){
         return mView;
     }
 }
